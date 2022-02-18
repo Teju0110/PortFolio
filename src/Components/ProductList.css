@@ -1,0 +1,42 @@
+.pl{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 100px;
+}
+
+pl_text{
+    width: 65%;
+}
+
+pl_title{
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.pl_desc{
+    margin: 20px 0px;
+}
+
+.pl_list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+@media screen and (max-width: 480px) {
+    .pl {
+      padding: 10px;
+    }
+  
+    .pl_text {
+      width: 100%;
+    }
+  
+    .pl_desc {
+      display: none;
+    }
+  }
