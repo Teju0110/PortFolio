@@ -2,6 +2,11 @@
     display: flex;
     height: 100vh;
     align-items: center;
+    padding-top: 0px;
+    line-height: 20px;
+    margin-bottom :-100px;
+    margin-right: 50px;
+
 }
 
 .about_left{
@@ -25,10 +30,10 @@
 
 .about_card_bg{
     position: absolute;
-    top:120px;
+    top: 180px;
     left:80px;
     background-color: rgb(214, 242, 245);
-    height: 45%;
+    height: 35%;
     width: 60%;
     border-radius: 20px;
 }
@@ -40,11 +45,11 @@
     position: relative;
 }
 
-.award-img {
-    width: 120px;
-    height: 120px;
-    border-radius: 20px;
-  }
+
+  .heading{
+    text-align: center;
+    color: #cdd835;
+}
   
   .about_right_title {
     font-weight: 400;
@@ -55,8 +60,15 @@
   }
   
   .about_right_desc{
-      font-weight: 300;
+      font-weight: 400;
+      font-size: 16px;
+      text-align: center;
   }
+
+  .title{
+    font-size: 3rem;
+    text-align: center;
+    }
   
   .award{
       margin-top: 50px;
@@ -75,10 +87,29 @@
       margin-bottom: 10px;
   }
 
-  @media screen and (max-width:480px) {
+  .aboutContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .details_Container{
+    padding: 1.5rem;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: #cdd835;
+    text-align: center;
+    color: black;
+  }
+
+  @media screen and (max-width:780px) {
     .about{
       flex-direction: column;
       text-align: center;
+      margin-bottom: 250px;
       margin-top: 50px;
     }
 

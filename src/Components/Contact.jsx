@@ -28,7 +28,7 @@ const Contact = () => {
   }
 
   return (
-    <div className="contact">
+    <div className="contact" id="contact">
       <div className="contact_bg"></div>
       <div className="contact_details">
         <div className="contact_left">
@@ -36,15 +36,16 @@ const Contact = () => {
           <div className="contact_info">
             <div className="contact_info_item">
               <img src={phone} alt="" className="contact_icon" />
-              +1 1234 556 75
+              +91 8693881789
             </div>
             <div className="contact_info_item">
               <img className="contact_icon" src={mail} alt="" />
-              contact@abc.dev
+              tejasvisawant1998@gmail.com
             </div>
             <div className="contact_info_item">
               <img className="contact_icon" src={address} alt="" />
-              245 King Street, Touterie Victoria 8520 Australia
+             C.B.D Belapur, Navi Mumbai, Mahrarashtra 
+             400614
             </div>
           </div>
         </div>
@@ -55,10 +56,10 @@ const Contact = () => {
             freelancing if the right project comes along. me.
           </p>
           <form ref={formRef} onSubmit={handleSubmit}>
-            <input style={{backgroundColor: darkMode && "#333" }} type="text" placeholder="Subject" name="user_subject" required/>
-            <input style={{backgroundColor: darkMode && "#333"}} type="text" placeholder="Email" name="user_email" required/>
-            <textarea style={{backgroundColor: darkMode && "#333"}} rows="5" placeholder="Message" name="message" required/>
-            <input style={{backgroundColor: darkMode && "#333"}} type="text" placeholder="Name" name="user_name" required/>
+            <input  type="text" placeholder="Subject" name="user_subject" required/>
+            <input  type="text" placeholder="Email" name="user_email" required/>
+            <textarea  rows="5" placeholder="Message" name="message" required/>
+            <input  type="text" placeholder="Name" name="user_name" required/>
             <button>Submit</button>
             {done && "Thank You !!"}
           </form>

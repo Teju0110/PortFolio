@@ -3,9 +3,11 @@ import './App.css';
 import About from './Components/About';
 import Contact from './Components/Contact';
 import Profile from './Components/Profile';
-import ProductList from './Components/ProductList';
 import Toggle from './Components/Toggle';
 import { ThemeContext } from './Context/Context';
+import Experience from './Components/Experience';
+import Projects from './Components/Projects';
+import NavBar from './Components/NavBar';
 
 function App() {
 
@@ -20,9 +22,11 @@ function App() {
         }}
     >
       <Toggle/>
+      <NavBar/>
       <Profile/>
       <About/>
-      <ProductList/>
+      <Experience/>
+      <Projects/>
       <Contact/>
       
     </div>

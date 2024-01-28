@@ -15,8 +15,8 @@ const Toggle = () => {
 
   return (
     <div className='toggle'>
-        <img src={sun} alt="" className='toggle_icon'/>        
-        <img src={moon} alt="" className='toggle_icon'/>
+        <img src={sun} alt="" className='toggle_icon'onClick={handleClick}/>        
+        <img src={moon} alt="" className='toggle_icon' onClick={handleClick}/>
 
         <div className='toggle_btn' onClick={handleClick}
             style={{
